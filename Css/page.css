@@ -1,0 +1,379 @@
+  * {
+            margin: 0%;
+            padding: 0%;
+
+        }
+
+ header {
+            position: sticky;
+            top: 0;
+        }
+
+        .head-section {
+            height: 60px;
+            background-color: #262626;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* margin-left: 5px;
+            margin-right: 5px; */
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            top: 0;
+        }
+
+        .head-logo img {
+            height: 14px;
+            width: 118px;
+            margin-right: 20px;
+        }
+
+        .bton {
+            background-color: #82b440;
+            height: 30px;
+            width: 100px;
+            font-size: 14px;
+            border-radius: 6px;
+            color: white;
+            border: none;
+            margin-right: 20px;
+        }
+
+        bton:hover {
+            border: 1px #82b440;
+        }
+
+        /** NavBar **/
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ffffff;
+            padding: 25px 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            /* margin-left: 5px;
+            margin-right: 5px; */
+          
+        }
+
+        .nav-logo img {
+            height: 50px;
+            width: auto;
+            margin-left: 130px;
+
+        }
+
+        .nav-menu ul {
+            display: flex;
+            list-style: none;
+            gap: 10px;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #333;
+            padding: 8px 12px;
+            font-size: 16px;
+        }
+
+        .nav-menu a:hover {
+            color: blueviolet;
+            border-radius: 4px;
+        }
+
+        .nav-btn .btn {
+            height: 40px;
+            width: 250px;
+            background-color: #0767A7;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-right: 100px;
+        }
+
+        .nav-btn .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /** About Section**/
+
+        .about-section{
+            height: 143px;
+            background-color: #F8F9FA;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .about-section h1{
+            font-size: 38px;
+            padding-right: 180px;
+        }
+
+        .about-section a {
+            text-decoration: none;
+
+        }
+
+         .about-section a:hover{
+            text-decoration: underline;
+         }
+
+         /** About Doctor **/
+
+         .about-doctor{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 20px;
+            height: 485px;
+         }
+
+         .doctor-image img{
+            height: 410px;
+         }
+
+         .doctor-content button{
+            width: 145px;
+            height: 38px;
+            border-radius: 20px;
+            background-color: #0767A7;
+            color: white;
+            border: none;
+         }
+
+         /** Card Archieve **/
+
+         .archiev-container{
+            display: flex;
+           justify-content: space-evenly;
+           margin: 60px;
+           padding: 60px;
+         }
+
+         .archieve-card1{
+             height: 365px;
+            border: 1px solid black;
+            border-radius: 8px;
+         }
+
+
+          .archieve-card1:hover {
+            box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+
+        }
+         .archieve-card1 img{
+            height: 200px;
+            width: 320px;
+          
+             border-top-left-radius: 8px;
+              border-top-right-radius: 8px;
+         }
+
+         .archieve-card1 h3{
+            font-size: 20px;
+            padding-top: 10px;
+            padding-left: 15px;
+         }
+
+         .archieve-card1 p{
+           color: #646464;
+            padding-top: 10px;
+            padding-left: 15px;
+         }
+
+         .archieve-card1 a{
+          text-decoration: none;
+            padding-top: 10px;
+            padding-left: 15px;
+         }
+
+         /** Department section **/
+
+         .dep-container{
+            display: flex;
+            justify-content: space-evenly;
+            
+         }
+
+         .dep{
+            height: 93px;
+            width: 294px;
+            border: 1px solid black;
+          margin-top: 20px;
+          border-radius: 10px;
+         }
+
+         .dep h5{
+            font-size: 20px;
+            padding-top: 10px;
+            padding-left: 20px;
+         }
+
+          .dep a{
+           
+        
+            padding-left: 20px;
+         }
+
+          .dep:hover {
+            box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+
+        }
+
+        .department-container{
+            padding: 80px;
+        }
+
+        /** Portfolio Section**/
+
+        .portfolio-container{
+            margin: 60px;
+           
+        }
+
+        .portfolio-card{
+            display: flex;
+            justify-content: space-evenly;
+          padding-top: 40px;
+        }
+
+        .card-port{
+            height: 500px;
+            width: 350px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+         .card-port:hover {
+            box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+
+        }
+
+        .card-port img{
+            height: 300px;
+            width: 100%;
+             border-top-left-radius: 10px;
+              border-top-right-radius: 10px;
+        }
+
+        .card-port h3{
+            font-size: 20px;
+            padding-left: 20px;
+        }
+
+        .card-port p{
+           
+            padding-left: 20px;
+            padding-top: 15px;
+        }
+
+        .card-port a{
+           padding-top: 20px;
+            padding-left: 20px;
+        }
+
+        /** Feature Content**/
+
+        .feature-content{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 120px;
+        }
+
+        .feature-text h5{
+            font-size: 20px;
+            padding-top: 20px;
+        }
+
+        .feature-text p{
+            padding-top: 20px;
+            color: #646464;
+        }
+        .feature-text i{
+            color: #0767A7;
+        }
+
+         /** Footer Section**/
+
+        .footer-section{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 500px;
+            background-color: #212529;
+            text-align: left;
+            
+        }
+
+        .footer-content1{
+            color: #F8F9FACC;
+        }
+        .footer-content1 img{
+            padding-bottom: 20px;
+        }
+        .footer-content2{
+            margin-bottom: 33px;
+        }
+
+        .footer-content2 a{
+            color: #F8F9FAEC;
+            text-decoration: none;
+            padding-right: 50px;
+            
+        }
+
+        .footer-content2 li{
+            list-style: none;
+        }
+
+         .footer-content2 a:hover{
+            color: #0767A7;
+            text-decoration: underline;
+         }
+
+         .footer-content3 a{
+            color: #F8F9FAEC;
+            text-decoration: none;
+            padding-right: 60px;
+            
+        }
+
+         .footer-content3 li{
+            list-style: none;
+        }
+
+         .footer-content3 a:hover{
+            color: #0767A7;
+            text-decoration: underline;
+         }
+
+         /** Copyright**/
+
+         .copyright{
+            height: 81px;
+             background-color: #212529;
+             display: flex;
+             justify-content: center;
+             margin-top: 1px;
+             text-align: center;
+           
+         }
+
+         .copyright a{
+
+            text-align: center;
+            padding-top: 16px;
+            padding-right: 50px;
+            color: white;
+            text-decoration: none;
+            padding-top: 30px;
+         }
+
+         .copyright a:hover{
+            color: #0767A7;
+         }

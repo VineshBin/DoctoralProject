@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./logo.svg"> 
+    <title>Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+        }
+
+        .head-section {
+            height: 60px;
+            background-color: #262626;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* margin-left: 5px;
+            margin-right: 5px; */
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            top: 0;
+        }
+
+        .head-logo img {
+            height: 14px;
+            width: 118px;
+            margin-right: 20px;
+        }
+
+        .bton {
+            background-color: #82b440;
+            height: 30px;
+            width: 100px;
+            font-size: 14px;
+            border-radius: 6px;
+            color: white;
+            border: none;
+            margin-right: 20px;
+        }
+
+        bton:hover {
+            border: 1px #82b440;
+        }
+
+        /** NavBar **/
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ffffff;
+            padding: 25px 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            /* margin-left: 5px;
+            margin-right: 5px; */
+          
+        }
+
+        .nav-logo img {
+            height: 50px;
+            width: auto;
+            margin-left: 130px;
+
+        }
+
+        .nav-menu ul {
+            display: flex;
+            list-style: none;
+            gap: 10px;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #333;
+            padding: 8px 12px;
+            font-size: 16px;
+        }
+
+        .nav-menu a:hover {
+            color: blueviolet;
+            border-radius: 4px;
+        }
+
+        .nav-btn .btn {
+            height: 40px;
+            width: 250px;
+            background-color: #0767A7;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-right: 100px;
+        }
+
+        .nav-btn .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /** Main Section **/
+        .main {
+            /* margin-left: 5px;
+            margin-right: 5px; */
+            background-color: #646464;
+        }
+
+        .imag-box {
+            background-image: url(/images/cardiac-2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 600px;
+
+        }
+
+        .imgtext {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+
+        }
+
+        .content {
+            color: white;
+            margin-top: 200px;
+            margin-left: 100px;
+        }
+
+        .content button {
+            background-color: #000000;
+            color: white;
+            height: 40px;
+            width: 140px;
+            border: none;
+        }
+
+        .content button:hover {
+            background-color: white;
+            color: #000000;
+        }
+
+        .content2 {
+            margin-top: 200px;
+            margin-right: 100px;
+        }
+
+        .content2 li {
+            /* background-color: rgba(255, 255, 255, 0.05); */
+            color: rgb(255, 255, 255);
+            width: 220px;
+            height: 50px;
+            border-style: none;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bolder;
+            margin-top: 10px;
+        }
+
+        /** Main Section **/
+
+        .main-section {
+            display: flex;
+
+        }
+
+        .section-content1 {
+            background-color: #0767A7CC;
+
+        }
+
+        .section-content2 {
+            background-color: #0767A7E6;
+
+        }
+
+        .section-content3 {
+            background-color: #0767A7;
+
+        }
+
+        .box {
+            height: 300px;
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFFFFF;
+
+        }
+
+        .box ul {
+            list-style: none;
+        }
+
+        .box hr {
+            width: 300px;
+            margin-top: 5px;
+
+
+        }
+
+        /** our Services **/
+        .our-services {
+            text-align: center;
+            margin-top: 80px;
+            /* margin-left: 5px;
+            margin-right: 5px; */
+
+
+        }
+
+        .our-services h3 {
+            font-weight: bold;
+            font-size: 27px;
+            color: #000000;
+             padding-bottom: 20px;
+        }
+
+        .our-services p {
+            color: #646464;
+        }
+
+        .cardContainer {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+
+        .card-imge {
+            width: 230px;
+            height: 350px;
+            border: 1px solid #646464;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            margin-top: -180px;
+
+
+        }
+
+        .card-imge:hover {
+            box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+
+        }
+
+        .card-imge p {
+
+            text-align: left;
+            padding-left: 15px;
+            color: #646464;
+            padding-top: 10px; 
+        }
+
+        .card-imge img {
+            width: 100%;
+            height: 120px;
+            border-radius: 10px;
+
+        }
+
+        .card-imge h2 {
+            padding-left: 20px;
+            /* padding-top: 10px; */
+        }
+
+        .card-imge a {
+            padding-left: 15px;
+        }
+
+        .service-slide {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 120px;
+
+        }
+
+        .service-slide i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            width: 30px;
+            text-align: center;
+            border: 1px solid black;
+            margin-top: 90px;
+            margin-left: 20px;
+            margin-right: 20px;
+
+        }
+
+        .service-slide i:hover {
+            background-color: blue;
+            color: white;
+        }
+
+        /**our Health Expert **/
+
+
+
+        .experts {
+            text-align: center;
+            margin-top: 80px;
+            /* margin-left: 5px;
+            margin-right: 5px; */
+            background-color: rgb(247, 245, 245);
+
+            padding: 80px;
+
+        }
+
+        .experts h3 {
+            font-weight: bold;
+            font-size: 27px;
+            color: #000000;
+        }
+
+        .experts p {
+            color: #646464;
+        }
+
+
+        .expert-Container {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+        }
+
+
+        .expert-slide i {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 30px;
+            width: 30px;
+            text-align: center;
+            border: 1px solid black;
+            margin-top: 90px;
+            margin-left: 20px;
+            margin-right: 20px;
+
+        }
+
+        .card {
+            /* position: relative; */
+            width: 230px;
+            height: 350px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-top: 50px;
+            background-size: cover;
+        }
+
+        .card h2 {
+            padding-left: 15px;
+        }
+
+        .card p {
+            padding-left: 15px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .social-icons {
+            /* position: absolute; */
+            bottom: -50px;
+            /* initially hidden below */
+            left: 0;
+            width: 100%;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px 0;
+            transition: bottom 0.4s ease;
+        }
+
+        .social-icons i {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 20px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover .social-icons {
+            bottom: 0;
+            /* slides up on hover */
+        }
+
+        .social-icons i:hover {
+            transform: scale(1.2);
+        }
+
+        /**Appointment Section**/
+
+        .get-appoin {
+            width: 380px;
+            height: 580px;
+
+
+        }
+
+        .get-appoin img {
+            height: 350px;
+            width: 280px;
+        }
+
+        .upcoming {
+            width: 700px;
+            height: 650px;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .appoint-container {
+            display: flex;
+            /* margin-left: 5px;
+            margin-right: 5px; */
+            justify-content: space-evenly;
+            padding: 90px;
+            align-items: center;
+        }
+
+
+        .timer4 {
+            width: 550px;
+            height: 116px;
+            border: 1px solid blue;
+            margin-top: 15px;
+            /* padding-top: 10px; */
+            display: flex;
+
+            justify-content: space-evenly;
+
+        }
+
+        .timer4 img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border: 2px solid blue;
+            margin-top: 10px;
+
+
+        }
+
+        .dollar {
+            padding-top: 10px;
+        }
+
+        .timer {
+            width: 100px;
+            height: 100px;
+            /* border: 2px solid blue; */
+            background-size: cover;
+            margin-top: 25px;
+            border-radius: 10px;
+            text-align: center;
+
+
+
+        }
+
+        .timer p {
+
+            background-color: #1890FF;
+            height: 30px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            font-size: 16px;
+            color: white;
+            padding-top: 8px;
+        }
+
+        .wed {
+            background-color: rgb(157, 208, 235);
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+
+        /** Rating Section**/
+
+        .rating-container {
+            /* margin-left: 5px;
+            margin-right: 5px; */
+            height: 330px;
+            width: 100%;
+            background-color: rgb(79, 87, 92);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .medical-exp i {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            color: #FFFFFF;
+
+        }
+
+        /** Blog Section **/
+
+        .blog-section {
+
+            margin-top: 80px;
+            /* margin-left: 5px;
+            margin-right: 5px; */
+            padding: 40px;
+
+        }
+
+        .blog-section h3 {
+            font-weight: bold;
+            font-size: 27px;
+            color: #000000;
+            text-align: center;
+
+        }
+
+        .blog-section p {
+            color: #646464;
+            text-align: center;
+        }
+
+        .blog-Container {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+        }
+
+        .card-blog {
+            width: 298px;
+            height: 330px;
+            border-radius: 10px;
+            margin-top: 50px;
+            background-size: cover;
+            border: 1px solid black;
+        }
+
+        .card-blog img {
+            width: 298px;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        .blog-btn {
+            height: 40px;
+            width: 142px;
+            margin-top: 40px;
+            border: 1px solid #0767A7;
+            margin-left: 600px;
+            border-radius: 30px;
+            color: #0767A7;
+        }
+
+        .blog-btn:hover {
+            background-color: #0767A7;
+            color: white;
+        }
+
+        /** Video Section**/
+
+        .video-section {
+            height: 360px;
+            background-color: #0767A7BF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* margin-left: 5px;
+            margin-right: 5px; */
+
+        }
+
+        .videos {
+            text-align: center;
+            padding-top: 20px;
+
+        }
+
+        .videos i {
+            color: white;
+        }
+
+        .video-content h2 {
+            text-align: center;
+            color: white;
+            font-size: 32px;
+
+        }
+
+        .video-content p {
+            text-align: center;
+            color: white;
+
+        }
+
+        /** Search Section**/
+        .search-section {
+/* 
+             margin-left: 5px;
+            margin-right: 5px; */
+
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/Project/blog1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 360px;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+
+        }
+
+        .search-input {
+            background-color: #FFFFFF;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+             height: 57px; 
+             width: 550px; 
+
+        }
+
+        .search-input input{
+            border: 0;
+            margin-left: 20px;
+            outline: 0;
+            font-size: 15px;
+            flex: 1;
+           
+        }
+
+        .search-input button{
+             border: 0;
+            background: #0767A7;
+            width: 150px;
+            height: 57px;
+            color: white;
+        }
+
+        /** Up Arrow **/
+
+        .upper-section{
+            height: 60px;
+            background-color: #000000E6;
+            display: flex;
+            justify-content: right;
+
+        }
+        .arrow-section i{
+            height: 60px;
+            width: 60px;
+            background-color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin-right: 70px;
+            text-decoration: none;
+        }
+
+        /** Footer Section**/
+
+        .footer-section{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 500px;
+            background-color: #212529;
+            text-align: left;
+            
+        }
+
+        .footer-content1{
+            color: #F8F9FACC;
+        }
+        .footer-content1 img{
+            padding-bottom: 20px;
+        }
+        .footer-content2{
+            margin-bottom: 33px;
+        }
+
+        .footer-content2 a{
+            color: #F8F9FAEC;
+            text-decoration: none;
+            padding-right: 50px;
+            
+        }
+
+        .footer-content2 li{
+            list-style: none;
+        }
+
+         .footer-content2 a:hover{
+            color: #0767A7;
+            text-decoration: underline;
+         }
+
+         .footer-content3 a{
+            color: #F8F9FAEC;
+            text-decoration: none;
+            padding-right: 60px;
+            
+        }
+
+         .footer-content3 li{
+            list-style: none;
+        }
+
+         .footer-content3 a:hover{
+            color: #0767A7;
+            text-decoration: underline;
+         }
+
+         /** Copyright**/
+
+         .copyright{
+            height: 81px;
+             background-color: #212529;
+             display: flex;
+             justify-content: center;
+             margin-top: 1px;
+             text-align: center;
+           
+         }
+
+         .copyright a{
+
+            text-align: center;
+            padding-top: 16px;
+            padding-right: 50px;
+            color: white;
+            text-decoration: none;
+            padding-top: 30px;
+         }
+
+         .copyright a:hover{
+            color: #0767A7;
+         }
+
+         
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="head-section">
+            <div class="head-logo">
+                <a href="#"><img src="/logo.svg"></a>
+            </div>
+            <div class="buy-button">
+                <a href="buy now"><button class="bton">Buy now</button></a>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <div class="nav-logo">
+              <a href="./index.html" > <img src="./images/nav_logo.png" alt="Logo"></a>
+            </div>
+
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="./All Pages/page1 copy.html">Pages</a></li>
+                    <li><a href="./All Pages/about.html">About Us</a></li>
+                    <li><a href="./All Pages/expert.html">Our Expert</a></li>
+                    <li><a href="./All Pages/services.html">Services</a></li>
+                    <li><a href="./All Pages/blog.html">Blog</a></li>
+                    <li><a href="./All Pages/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-btn">
+                <a href="../Appointment/Appointment.html"><button class="btn">MAKE AN APPOINTMENT</button></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main">
+        <div class="imag-box">
+
+            <div class="imgtext">
+                <div class="content">
+                    <h3 style="font-size: 17px;">PRIVATE INQUIRY TREATEMENT</h3>
+                    <p style="font-size: 65px; color: white;">EXPERT TEAM</p>
+                    <hr style="width: 70px; background-color: black;"><br>
+                    <span>We Have Established a team investment professional.<br>
+                        focused on buyouts and growth equity investment.
+                    </span><br><br>
+
+                    <a href="#"><Button>Meet Our Team</Button></a>
+                </div>
+                <div class="content2">
+                    <ol>
+                        <li> <a>Expert Team</a></li>
+                        <li><a>Child Care</a></li>
+
+                        <li><a>New Born Care</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Sections-->
+
+
+    <div class="main-section">
+        <div class="section-content1 box">
+            <div class="sec-text1" style="margin-bottom: 20px;">
+                <i class="fa-solid fa-location-dot fa-2x" style="height: 50px;"></i><br>
+                <h2>Our Location</h2><br>
+                <span>Doctoral Medical center, <br>123 Main Street<br>
+                    Your City, State Country.</span>
+            </div>
+        </div>
+        <div class="section-content2 box">
+            <div class="sec-text2">
+                <i class="fa-solid fa-phone-volume fa-2x" style="height: 50px;"></i>
+                <h2>Phone,Fax & Email</h2><br>
+                <ul>
+                    <li>Mobile: +808123444, +123440005</li>
+                    <hr size="1">
+                    <li>Fax: +2005444, +0035580</li>
+                    <hr size="0.5">
+                    <li>Email: info@doctoral.net</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section-content3 box">
+            <div class="sec-text3">
+
+                <i class="fa-regular fa-clock fa-2x" style="height: 50px;"></i><br>
+                <h2>Opening Hours</h2><br>
+                <ul>
+                    <li>Monday - Friday: 8.00 - 18.00</li>
+                    <hr size="1">
+                    <li>Saturday: 10.00 - 18.00</li>
+                    <hr size="1">
+                    <li>Sunday: 10.00 - 18.00</li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!--Services Section-->
+
+
+
+    <div class="our-services">
+
+        <h3>Our Services</h3><br>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum augue quis augue ornare, eget
+            faucibus <br>felis pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    </div>
+
+    <div class="service-slide">
+        <i class="fa-solid fa-angle-left"></i>
+        <i class="fa-solid fa-angle-right"></i>
+    </div>
+    <div class="cardContainer">
+        <div class="card-imge">
+            <img src="/images/card1.jpg">
+            <h2>Bill & Insurance</h2>
+            <p>Lorem ipsum dolor sit amet.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, eius.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde iste ad, odit provident dolor
+                mollitia!
+            </p>
+            <a href="#">Learn more ></a>
+        </div>
+
+        <div class="card-imge2 card-imge">
+            <img src="/images/card4.jpg">
+            <h2>Cardiac Surgery</h2>
+            <p>Lorem ipsum dolor sit amet.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, eius.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde iste ad, odit provident dolor
+                mollitia!
+            </p>
+            <a href="#">Learn more ></a>
+        </div>
+
+        <div class="card-imge3 card-imge">
+            <img src="/images/card2.jpg">
+            <h2>Cancer Screening</h2>
+            <p>Lorem ipsum dolor sit amet.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, eius.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde iste ad, odit provident dolor
+                mollitia!
+            </p>
+            <a href="#">Learn more ></a>
+        </div>
+
+        <div class="card-imge4 card-imge">
+            <img src="/images/card3.jpg">
+            <h2>Neaurology</h2>
+            <p>Lorem ipsum dolor sit amet.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, eius.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde iste ad, odit provident dolor
+                mollitia!
+            </p>
+            <a href="#">Learn more ></a>
+        </div>
+
+    </div>
+
+    <!--Medical Experts-->
+
+
+    <div class="experts">
+
+        <h3>Our Medical Experts</h3><br>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum augue quis augue ornare, eget
+            faucibus <br>felis pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <div class="expert-Container">
+
+            <div class="card">
+                <img src="/images/dr1.jpg" alt="Profile" />
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <h2>Larry Schmidt</h2>
+                <p>Neaurology Specialist</p>
+
+            </div>
+
+            <div class="card">
+                <img src="/images/dr2.jpg" alt="Profile" />
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <h2>Roger Schneider</h2>
+                <p>Abstatrics & Gynaecology</p>
+            </div>
+
+            <div class="card">
+                <img src="/images/dr3.jpg" alt="Profile" />
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <h2>Theresa Hamilton</h2>
+                <p>Medicine Specialist</p>
+            </div>
+
+            <div class="card">
+                <img src="/images/dr4.jpg" alt="Profile" />
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <h2>Britanny Robertan</h2>
+                <p>Neaurology Specialist</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Appointment Section-->
+    <div class="appoint-container">
+
+        <div class="get-appoin">
+            <h3 style="font-size: 28px;">Get Appointment Now!</h3><br>
+            <p style="color: #646464;">You will be notified via email soon. Lorem ipsum <br>dolor sit amet, consectetur
+                adipiscing elit.</p>
+            <p style="color: #646464;">I am text block. Click edit button to change this text. <br>Lorem ipsum dolor sit
+                amet, consectetur
+                adipiscing elit.<br> Ut elit tellus, luctus nec ullamcorper mattis,<br> pulvinar dapibus leo.</p>
+
+            <img src="/images/dr2.jpg">
+        </div>
+
+
+        <div class="upcoming">
+
+
+            <div class="time-container">
+
+                <div class="timer">
+
+                    <p>JUNE</p>
+                    <div class="wed">
+                        <span>
+                            <h1>11</h1>
+                            Wed
+                        </span>
+                    </div>
+
+                </div>
+                <div class="timer1 timer">
+                    <p>JUNE</p>
+                    <div class="wed">
+                        <span>
+                            <h1>13</h1>
+                            Fri
+                        </span>
+                    </div>
+                </div>
+                <div class="timer2 timer">
+                    <p>JUNE</p>
+                    <div class="wed">
+                        <span>
+                            <h1>15</h1>
+                            Sun
+                        </span>
+                    </div>
+                </div>
+                <div class="timer3 timer">
+                    <p>JUNE</p>
+                    <div class="wed">
+                        <span>
+                            <h1>16</h1>
+                            Mon
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="time-container2">
+                <p style="padding-left: 200px; font-size: 26px; color: #181818D9;">UPCOMING</p>
+                <div class="timer4">
+
+                    <div class="timer-img">
+                        <img src="/images/neoro.jpg">
+                    </div>
+                    <div class="timer-content">
+
+                        <p style="padding-top: 13px; font-size: 16px; font-weight: bold;">Neurology</p><br>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                            Lorem ipsum dolor sit amet.
+                        </span>
+                        <p style="padding-top: 5px;"> <i class="fa-solid fa-clock" style="color: #1890FF;"></i>11:00AM -
+                            5:30PM</p>
+                    </div>
+
+                    <div class="dollar">
+                        <p
+                            style="height: 20px; width: 90px; background-color: #A1CA64; border-radius: 2px; text-align: center;">
+                            20 available</p>
+                        <h2 style="text-align: center; padding-top: 10px;">$59,09</h2>
+                    </div>
+
+                </div>
+                <div class="timer5 timer4">
+
+                    <div class="timer-img">
+                        <img src="/images/neoro.jpg">
+                    </div>
+                    <div class="timer-content">
+
+                        <p style="padding-top: 13px; font-size: 16px; font-weight: bold;">Neurology</p><br>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                            Lorem ipsum dolor sit amet.
+                        </span>
+                        <p style="padding-top: 5px;"> <i class="fa-solid fa-clock" style="color: #1890FF;"></i>11:00AM -
+                            5:30PM</p>
+                    </div>
+
+                    <div class="dollar">
+                        <p
+                            style="height: 20px; width: 90px; background-color: #A1CA64; border-radius: 2px; text-align: center;">
+                            20 available</p>
+                        <h2 style="text-align: center; padding-top: 10px;">$59,09</h2>
+                    </div>
+
+
+                </div>
+                <div class="timer6 timer4">
+                    <div class="timer-img">
+                        <img src="/images/neoro.jpg">
+                    </div>
+                    <div class="timer-content">
+
+                        <p style="padding-top: 13px; font-size: 16px; font-weight: bold;">Neurology</p><br>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                            Lorem ipsum dolor sit amet.
+                        </span>
+                        <p style="padding-top: 5px;"> <i class="fa-solid fa-clock" style="color: #1890FF;"></i>11:00AM -
+                            5:30PM</p>
+                    </div>
+
+                    <div class="dollar">
+                        <p
+                            style="height: 20px; width: 90px; background-color: #A1CA64; border-radius: 2px; text-align: center;">
+                            20 available</p>
+                        <h2 style="text-align: center; padding-top: 10px;">$59,09</h2>
+                    </div>
+
+                </div>
+                <div class="timer7 timer4" style="margin-bottom: 35px;">
+                    <div class="timer-img">
+                        <img src="/images/neoro.jpg">
+                    </div>
+                    <div class="timer-content">
+
+                        <p style="padding-top: 13px; font-size: 16px; font-weight: bold;">Neurology</p><br>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                            Lorem ipsum dolor sit amet.
+                        </span>
+                        <p style="padding-top: 5px;"> <i class="fa-solid fa-clock" style="color: #1890FF;"></i>11:00AM -
+                            5:30PM</p>
+                    </div>
+
+                    <div class="dollar">
+                        <p
+                            style="height: 20px; width: 90px; background-color: #A1CA64; border-radius: 2px; text-align: center;">
+                            20 available</p>
+                        <h2 style="text-align: center; padding-top: 10px;">$59,09</h2>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Rating Section -->
+    <div class="rating-container">
+        <div class="medical-exp">
+            <i class="fa-solid fa-user-doctor fa-5x"></i>
+            <h1 style="text-align: center; color: #FFFFFF;">50</h1>
+            <h4 style="font-size: 24px; align-items: center;">Medical Experts</h4>
+        </div>
+
+        <div class="hospital-room medical-exp">
+
+            <i class="fa-solid fa-bed fa-5x"></i>
+            <h1 style="text-align: center; color: #FFFFFF;">300</h1>
+            <h4 style="font-size: 24px; align-items: center;">Hospital Rooms</h4>
+        </div>
+        <div class="Award-won medical-exp">
+            <i class="fa-solid fa-gem fa-5x"></i>
+            <h1 style="text-align: center; color: #FFFFFF;">500</h1>
+            <h4 style="font-size: 24px; align-items: center;">Awards Won</h4>
+        </div>
+        <div class="happy-patient medical-exp">
+            <i class="fa-solid fa-face-smile fa-5x"></i>
+
+            <h1 style="text-align: center; color: #FFFFFF;">5000</h1>
+            <h4 style="font-size: 24px; align-items: center;">Happy Patients</h4>
+
+        </div>
+    </div>
+
+    <!-- Latest Blog Container -->
+    <div class="blog-section">
+
+        <h3>Latest From our blog</h3><br>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum augue quis augue ornare, eget
+            faucibus <br>felis pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <div class="blog-Container">
+
+            <div class="card-blog">
+                <img src="/images/blog1.jpg" />
+
+                <div class="blog-content" style="padding-top: 20px; padding-left: 20px;">
+                    <a href="#" style="font-size: 12px; color: #0767A7; text-decoration: none;">MEDICAL CARE</a><br><br>
+                    <a href="#" style="font-size: 20px; color: #000000; font-weight: bold; text-decoration: none;">Good
+                        Health Habits Can Help<br> Stop Germs</a>
+                </div>
+            </div>
+
+            <div class="card-blog">
+                <img src="/images/blog2.jpg" />
+
+                <div class="blog-content" style="padding-top: 20px; padding-left: 20px;">
+                    <a href="#" style="font-size: 12px; color: #0767A7; text-decoration: none;">MEDICAL CARE</a><br><br>
+                    <a href="#"
+                        style="font-size: 20px; color: #000000; font-weight: bold; text-decoration: none;">Important
+                        tips for your <br>health and better living</a>
+                </div>
+            </div>
+
+
+            <div class="card-blog">
+                <img src="/images/blog3.jpg" />
+
+                <div class="blog-content" style="padding-top: 20px; padding-left: 20px;">
+                    <a href="#" style="font-size: 12px; color: #0767A7; text-decoration: none;">MEDICAL CARE</a><br><br>
+                    <a href="#" style="font-size: 20px; color: #000000; font-weight: bold; text-decoration: none;">Fusce
+                        porttitor dui ultricies<br> placerat adipiscing</a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <a href="#">
+            <button class="blog-btn"> More News</button> </a>
+
+    </div>
+
+    <!-- Video Section-->
+    <div class="video-section">
+        <div class="video-content">
+
+            <h2>Watch Video For Healthy Food</h2><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum augue quis augue ornare,
+                eget<br>
+                faucibus felis pharetra. Proin condimentum et leo quis fringilla.
+
+
+            </p>
+            <div class="videos">
+
+                <a href="https://youtu.be/bAxqEfWsKE8?si=GJvsReY6K72NZMKj">
+                    <i class="fa-solid fa-circle-play fa-5x"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Search Bar-->
+    <div class="search-section">
+
+        <div class="search-content">
+            <h3 style="padding-bottom: 10px; font-size: 27px;">I'm Ready to Help You</h3>
+            <h2 style="padding-bottom: 30px; font-size: 31px; color: white;">Subscribe for Monthly Health Tips</h2>
+
+            <form class="search-input">
+
+                <input type="text" placeholder="Your Email Address">
+                <button>SUBSCRIBE NOW</button>
+            </form>
+        </div>
+    </div>
+
+    <!--Upper Section-->
+
+    <div class="upper-section">
+        <div class="arrow-section">
+            <a href="../Index/index.html" style="text-decoration: none;">
+                <i class="fa-solid fa-angle-up"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+
+    <footer>
+        <div class="footer-section">
+            <div class="footer-content1" >
+                <img src="/images/nav_logo.png"><br>
+
+                <p>Lorem ipsum dolor sit amet consectetur, <br>adipisicing elit. Hic dolore eveniet sapiente<br> nostrum dolor consequuntur nam delectus facilis<br> debitis reiciendis fugit illo sequi facere. Ipsa!</p><br>
+
+                <i class="fa-brands fa-square-facebook fa-2x" style="color: #3B5898; margin-right: 10px;"></i>
+                <i class="fa-brands fa-youtube fa-2x" style="color: #CC181E; margin-right: 10px;"></i>
+                <i class="fa-brands fa-square-twitter fa-2x" style="color: #1AB4EF; margin-right: 10px;"></i>
+            </div>
+            <div class="footer-content2">
+                <h3 style="font-size: 24px; color: white;">Our Services</h3><br>
+                <ul>
+                    <li><a href="#">Bill & Insurance</a></li>
+                    <hr size="1"><br>
+                     <li><a href="#">Cancer Screening</a></li>
+                    <hr size="1"><br>
+                     <li><a href="#">Cardiac Surgery</a></li>
+                    <hr size="1"><br>
+                     <li><a href="#">Neaurology</a></li>
+                    <hr size="1">
+                </ul>
+
+            </div>
+            <div class="footer-content3">
+                <h3 style="font-size: 24px; color: white; text-align: right;">Specialist Doctors</h3><br>
+
+                 <ul>
+                    <li><a href="#">Larry Schmidt</a></li>
+                    <hr size="1"><br>
+                     <li><a href="#">Roger Schneider</a></li>
+                    <hr size="1"><br>
+                     <li><a href="#">Theresa Hamilton</a></li>
+                    <hr size="1"><br>
+                     <li><a href="#">Brittany Robertson</a></li>
+                    <hr size="1"><br>
+                     <li><a href="#">Raymond Payne</a></li>
+                    <hr size="1">
+                </ul>
+            </div>
+            <div class="footer-content4">
+                <h3 style="font-size: 24px; color: white; padding-top: 80px;">The Heart Of Clinic</h3><br>
+                <h5 style="font-size: 20px; color: white;">Dr. Jonathan Barnes</h5><br>
+                <span style="color: #F8F9FACC;">Chief Medical Officer</span>
+                <p style="color: #F8F9FACC;">1-800-1234-567</p>
+
+                <p style="color: #F8F9FACC;">Aliquam orci nullam tempor sapien orci<br> gravida donec enim ipsum porta justo<br> integer at velna vitae auctor integer<br> congue</p><br><br><br>
+
+                <a href="#">
+                    <button style="width: 216px; height: 38px; border-radius:20px ; background-color: #0767A7; color: white; border: none;">Learn More</button>
+                </a>
+            </div>
+        </div>
+        <div class="copyright">
+        <p style="color: #F8F9FACC; padding-top: 30px;"> Copyright © 2025. All Rights Reserved. Made with  by <i class="fa-solid fa-heart" style="color: #1890FF;"></i> <a>ThemePerch </a></p>
+
+        <a href="#">Latest News</a>
+        <a href="#"> Terms And Conditions</a>
+    </div>
+
+    </footer>
+
+</body>
+
+</html>
